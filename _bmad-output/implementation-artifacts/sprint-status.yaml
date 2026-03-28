@@ -1,0 +1,59 @@
+# Sprint status — generated to unblock create-story (run sprint-planning to refresh)
+# STATUS DEFINITIONS: see template in .cursor/skills/bmad-sprint-planning/sprint-status-template.yaml
+
+generated: 2026-03-28
+last_updated: 2026-03-28T15:30:00
+project: AngularWithNETAppSettingsSerilog
+project_key: angular-dotnet-todo-sample
+tracking_system: file-system
+story_location: "{project-root}/_bmad-output/implementation-artifacts"
+
+development_status:
+  epic-1: in-progress
+  1-1-retarget-dotnet-lts-green-build: review
+  1-2-align-http-host-pipeline: review
+  1-3-upgrade-angular-supported-major: review
+  1-4-serilog-console-configurable-file: review
+  1-5-dev-proxy-two-process-docs: review
+  1-6-readme-rename-public-hygiene: review
+  epic-1-retrospective: optional
+
+  epic-2: in-progress
+  2-1-sqlite-users-fail-fast-init: review
+  2-2-password-hashing-demo-seed: review
+  2-3-login-jwt-refresh-rotation: review
+  2-4-sign-out-refresh-revocation: review
+  2-5-angular-public-routes-login-errors: review
+  2-6-bearer-silent-refresh-retry: review
+  epic-2-retrospective: optional
+
+  epic-3: in-progress
+  3-1-todo-persistence-model-migration: review
+  3-2-list-create-todo-apis: review
+  3-3-edit-delete-complete-completedat: review
+  3-4-angular-todo-feature-ui: review
+  3-5-refresh-task-list-server: review
+  3-6-persistence-browser-reload: review
+  epic-3-retrospective: optional
+
+  epic-4: in-progress
+  4-1-non-secret-settings-spa: review
+  4-2-shell-navigation-route-guards: review
+  4-3-permission-checks-client-server: review
+  4-4-shared-demo-notice: review
+  4-5-optional-demo-experiences-gated: review
+  epic-4-retrospective: optional
+
+  epic-5: in-progress
+  5-1-correlation-id-middleware-logs: review
+  5-2-problem-details-production-safe-errors: review
+  5-3-surface-correlation-id-angular: review
+  epic-5-retrospective: optional
+
+  epic-6: in-progress
+  6-1-dotnet-integration-tests: review
+  6-2-dotnet-unit-tests: review
+  6-3-angular-test-infra-modernization: review
+  6-4-angular-service-guard-tests: review
+  6-5-angular-component-tests: review
+  epic-6-retrospective: optional
