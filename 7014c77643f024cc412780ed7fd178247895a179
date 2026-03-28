@@ -1,0 +1,21 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.19",
+  "base_commit_sha": "7014c77643f024cc412780ed7fd178247895a179",
+  "prompts": {
+    "af03159a67de3e91": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "de06f4b7-7da4-4887-99d5-07d968d3bc38",
+        "model": "claude-4.6-opus-high-thinking"
+      },
+      "human_author": "Prakash Patel <prakashp@pageuppeople.com>",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 14,
+      "overriden_lines": 0
+    }
+  }
+}
