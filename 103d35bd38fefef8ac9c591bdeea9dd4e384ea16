@@ -1,0 +1,193 @@
+tests/AngularWithNET.Tests/SettingsApiTests.cs
+  af03159a67de3e91 1-55
+ClientApp/src/karma.conf.js
+  af03159a67de3e91 9,13,15,17-21,28
+appsettings.json
+  af03159a67de3e91 3-6,18,20,23-24,29-33,37,42
+ClientApp/src/app/services/app-settings.service.ts
+  af03159a67de3e91 3,17,19
+Features/Auth/Services/PasswordService.cs
+  af03159a67de3e91 1-22
+ClientApp/src/app/features/todos/todo-list.component.css
+  af03159a67de3e91 1-422
+ClientApp/src/app/core/services/auth.service.ts
+  af03159a67de3e91 1-94
+Domain/RefreshToken.cs
+  af03159a67de3e91 1-25
+tests/AngularWithNET.Tests/TodosApiTests.cs
+  af03159a67de3e91 1-165
+ClientApp/src/app/core/guards/auth.guard.spec.ts
+  af03159a67de3e91 1-43
+ClientApp/src/app/nav-menu/nav-menu.component.spec.ts
+  af03159a67de3e91 1-57
+Data/DbSeeder.cs
+  af03159a67de3e91 1-36
+README.md
+  af03159a67de3e91 1,3,5,7,9,11-25,27,29,31-35,37,39-42,44-45,47-51,53-268
+ClientApp/src/app/counter/counter.component.ts
+  af03159a67de3e91 4
+ClientApp/src/index.html
+  af03159a67de3e91 5
+Controllers/SecurityController.cs
+  af03159a67de3e91 1,14
+tests/AngularWithNET.Tests/PasswordServiceTests.cs
+  af03159a67de3e91 1-46
+Infrastructure/GlobalExceptionHandler.cs
+  af03159a67de3e91 1-54
+ViewModel/CustomErrorMiddleware.cs
+  af03159a67de3e91 8
+ClientApp/src/app/core/interceptors/auth.interceptor.ts
+  af03159a67de3e91 1-67
+ClientApp/src/app/login/login.component.ts
+  af03159a67de3e91 1-4,8,14-17,20,23-24,26-27,32-34,38-43,45-56
+Program.cs
+  af03159a67de3e91 1-4,6,8,12,17-21,26-28,30-97,99-109,114
+ClientApp/src/app/nav-menu/nav-menu.component.ts
+  af03159a67de3e91 2,5,13,24
+Data/Migrations/20260328040226_AddRefreshTokens.cs
+  af03159a67de3e91 1-56
+Data/Migrations/20260328041732_AddTodoItems.cs
+  af03159a67de3e91 1-50
+Properties/launchSettings.json
+  af03159a67de3e91 18
+ViewModel/JwtMiddleware.cs
+  af03159a67de3e91 10
+tests/AngularWithNET.Tests/CustomWebApplicationFactory.cs
+  af03159a67de3e91 1-56
+ClientApp/README.md
+  af03159a67de3e91 1,3,7-8,13,19,21
+Infrastructure/CorrelationIdMiddleware.cs
+  af03159a67de3e91 1-36
+ClientApp/src/app/features/todos/todo-list.component.ts
+  af03159a67de3e91 1-82
+ClientApp/src/app/fetch-data/fetch-data.component.ts
+  af03159a67de3e91 5,13-17
+ViewModel/AuthorizeAttribute.cs
+  af03159a67de3e91 6
+ClientApp/src/app/core/services/settings.service.ts
+  af03159a67de3e91 1-43
+ClientApp/src/app/app.component.ts
+  af03159a67de3e91 3,6,13,17-22
+ClientApp/angular.json
+  af03159a67de3e91 6,19,43-50,52-53,59-62,64-65,70,76
+ClientApp/src/polyfills.ts
+  af03159a67de3e91 1
+ClientApp/src/tsconfig.app.json
+  af03159a67de3e91 7-13,15
+AngularWithNET.csproj
+  af03159a67de3e91 1-40
+ClientApp/tsconfig.json
+  af03159a67de3e91 5,12-14,19,22-27
+.gitignore
+  af03159a67de3e91 232-255
+ViewModel/AppSettingsViewModel.cs
+  af03159a67de3e91 1
+ClientApp/src/app/core/services/settings.service.spec.ts
+  af03159a67de3e91 1-62
+ClientApp/src/app/features/todos/todo.service.spec.ts
+  af03159a67de3e91 1-78
+tests/AngularWithNET.Tests/AngularWithNET.Tests.csproj
+  af03159a67de3e91 1-24
+ClientApp/src/app/nav-menu/nav-menu.component.html
+  af03159a67de3e91 2,4,14-20,22-23,25-26,28-29,31-32
+ClientApp/src/app/services/permission.directive.ts
+  af03159a67de3e91 2,5,9-13,17-19
+ClientApp/src/app/home/home.component.ts
+  af03159a67de3e91 5
+Domain/User.cs
+  af03159a67de3e91 1-19
+Features/Todos/TodosController.cs
+  af03159a67de3e91 1-121
+Data/Migrations/20260328041732_AddTodoItems.Designer.cs
+  af03159a67de3e91 1-137
+Pages/_ViewImports.cshtml
+  af03159a67de3e91 1-2
+Data/Migrations/20260328035748_InitialCreate.Designer.cs
+  af03159a67de3e91 1-51
+ClientApp/src/app/app-settings/app-settings.component.spec.ts
+  af03159a67de3e91 1,3,9-17,19-23
+Startup.cs
+  af03159a67de3e91 1-8,11-13,17,19,33,36-78,80-85,91-92,98,100-101,103,108,112-113
+ClientApp/src/app/services/component.service.ts
+  af03159a67de3e91 4
+ClientApp/src/app/app-settings/app-settings.component.ts
+  af03159a67de3e91 5
+tests/AngularWithNET.Tests/AuthApiTests.cs
+  af03159a67de3e91 1-145
+ClientApp/src/app/features/todos/todo-list.component.spec.ts
+  af03159a67de3e91 1-109
+AngularWithNET.sln
+  af03159a67de3e91 1-56
+ClientApp/src/app/app.component.html
+  af03159a67de3e91 1-8
+SECURITY.md
+  af03159a67de3e91 1-23
+ClientApp/src/app/counter/counter.component.spec.ts
+  af03159a67de3e91 1,8,10-11,20,25
+ViewModel/WeatherForecast.cs
+  af03159a67de3e91 3
+ClientApp/src/app/features/todos/todo.service.ts
+  af03159a67de3e91 1-36
+Data/Migrations/AppDbContextModelSnapshot.cs
+  af03159a67de3e91 1-134
+Data/Migrations/20260328035748_InitialCreate.cs
+  af03159a67de3e91 1-43
+ClientApp/src/app/core/guards/auth.guard.ts
+  af03159a67de3e91 1-15
+ClientApp/src/app/login/login.component.spec.ts
+  af03159a67de3e91 1-4,6-7,12-17,20-28,40-79
+Features/Settings/SettingsController.cs
+  af03159a67de3e91 1-45
+Data/AppDbContext.cs
+  af03159a67de3e91 1-39
+ClientApp/src/app/features/todos/todo-list.component.html
+  af03159a67de3e91 1-158
+ViewModel/AppSettings.cs
+  af03159a67de3e91 1
+ClientApp/src/app/core/services/auth.service.spec.ts
+  af03159a67de3e91 1-118
+ClientApp/proxy.conf.json
+  af03159a67de3e91 1-12
+ClientApp/src/app/login/login.component.html
+  af03159a67de3e91 1-48,50-52
+ClientApp/src/app/app.module.ts
+  af03159a67de3e91 3-4,6,16-22,24-25,38,41,47-51,56,58,65
+tests/AngularWithNET.Tests/DbSeederTests.cs
+  af03159a67de3e91 1-78
+ViewModel/UserViewModel.cs
+  af03159a67de3e91 1
+Data/Migrations/20260328040226_AddRefreshTokens.Designer.cs
+  af03159a67de3e91 1-96
+appsettings.Development.json
+  af03159a67de3e91 1-3,7-10
+Domain/TodoItem.cs
+  af03159a67de3e91 1-23
+ViewModel/LoginDetails.cs
+  af03159a67de3e91 1
+Pages/Error.cshtml.cs
+  af03159a67de3e91 10
+ClientApp/package.json
+  af03159a67de3e91 6,9,13-24,27-38
+Features/Auth/AuthController.cs
+  af03159a67de3e91 1-204
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.19",
+  "base_commit_sha": "103d35bd38fefef8ac9c591bdeea9dd4e384ea16",
+  "prompts": {
+    "af03159a67de3e91": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "de06f4b7-7da4-4887-99d5-07d968d3bc38",
+        "model": "claude-4.6-opus-high-thinking"
+      },
+      "human_author": "Prakash Patel <prakashp@pageuppeople.com>",
+      "messages": [],
+      "total_additions": 5279,
+      "total_deletions": 1659,
+      "accepted_lines": 4956,
+      "overriden_lines": 5
+    }
+  }
+}
