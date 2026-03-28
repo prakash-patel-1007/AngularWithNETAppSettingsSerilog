@@ -1,4 +1,4 @@
-﻿using Angular11WithNetCore31.ViewModel;
+using AngularWithNET.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
@@ -11,7 +11,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Angular11WithNetCore31.Controllers
+namespace AngularWithNET.Controllers
 {
     [ApiController]
     [Route("[controller]")]

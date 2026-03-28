@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AppSettingsService } from '../services/app-settings.service';
 
 @Component({
+  standalone: false,
   selector: 'app-app-settings',
   templateUrl: './app-settings.component.html',
   styleUrls: ['./app-settings.component.css']

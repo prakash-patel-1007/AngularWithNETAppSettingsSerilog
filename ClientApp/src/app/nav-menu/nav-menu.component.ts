@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { HelperService } from '../services/helper.service';
+import { AuthService } from '../core/services/auth.service';
 
 @Component({
+  standalone: false,
   selector: 'app-nav-menu',
   templateUrl: './nav-menu.component.html',
   styleUrls: ['./nav-menu.component.css']
@@ -10,7 +10,7 @@ import { HelperService } from '../services/helper.service';
 export class NavMenuComponent {
   isExpanded = false;
 
-  constructor(private helperService: HelperService, private router: Router) {}
+  constructor(public authService: AuthService) {}
 
   collapse() {
     this.isExpanded = false;
@@ -21,7 +21,6 @@ export class NavMenuComponent {
   }
 
   logout() {
-    this.helperService.clearToken();
-    this.router.navigate(['login'], { replaceUrl: true });
+    this.authService.logout();
   }
 }

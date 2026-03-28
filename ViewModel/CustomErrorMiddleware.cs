@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using Serilog;
 using System;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace Angular11WithNetCore31.ViewModel
+namespace AngularWithNET.ViewModel
 {
     public class CustomErrorMiddleware
 	{

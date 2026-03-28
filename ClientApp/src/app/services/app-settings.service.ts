@@ -1,5 +1,6 @@
 import { Inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { firstValueFrom } from 'rxjs';
 
 @Injectable()
 export class AppSettingsService {
@@ -13,10 +14,9 @@ export class AppSettingsService {
        }
 
   loadConfig() {
-    return this.http.get<IServerConfiguration>(this._baseUri + 'security/getSettings')
-      .toPromise()
+    return firstValueFrom(this.http.get<IServerConfiguration>(this._baseUri + 'security/getSettings'))
       .then(result => {
-        this.configuration = <IServerConfiguration>(result);
+        this.configuration = result;
       }, error => console.error(error));
   }
 

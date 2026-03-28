@@ -1,6 +1,8 @@
-<body>
-  <app-nav-menu *ngIf="headerVisible" ></app-nav-menu>
-  <div class="container">
-    <router-outlet></router-outlet>
-  </div>
-</body>
+<div *ngIf="showDemoBanner" class="alert alert-warning text-center mb-0 py-2" role="alert">
+  This is a demo environment. Do not store sensitive data.
+  <button type="button" class="btn-close btn-sm ms-2" aria-label="Dismiss" (click)="showDemoBanner = false"></button>
+</div>
+<app-nav-menu *ngIf="headerVisible"></app-nav-menu>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

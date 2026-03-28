@@ -1,4 +1,4 @@
-﻿namespace Angular11WithNetCore31.ViewModel
+namespace AngularWithNET.ViewModel
 {
     public class AppSettingsViewModel
     {

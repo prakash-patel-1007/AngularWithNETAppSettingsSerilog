@@ -1,49 +1,35 @@
 <header>
-  <nav
-    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
-  >
+  <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom shadow-sm mb-3">
     <div class="container">
-      <a class="navbar-brand" [routerLink]="['/']">Angular11WithNetCore31</a>
+      <a class="navbar-brand" [routerLink]="['/']">Angular Todo Sample</a>
       <button
         class="navbar-toggler"
         type="button"
-        data-toggle="collapse"
-        data-target=".navbar-collapse"
         aria-label="Toggle navigation"
         [attr.aria-expanded]="isExpanded"
         (click)="toggle()"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div
-        class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
-        [ngClass]="{ show: isExpanded }"
-      >
-        <ul class="navbar-nav flex-grow">
-          <li
-            class="nav-item"
-            [routerLinkActive]="['link-active']"
-            [routerLinkActiveOptions]="{ exact: true }"
-          >
-            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
+      <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" [ngClass]="{ show: isExpanded }">
+        <ul class="navbar-nav flex-grow" *ngIf="authService.isAuthenticated$ | async">
+          <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+            <a class="nav-link text-dark" [routerLink]="['/home']">Home</a>
           </li>
-          <li *permission="'ViewAppSettings'" class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/app-settings']"
-              >Application Settings</a
-            >
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link text-dark" [routerLink]="['/todos']">Todos</a>
           </li>
-          <li *permission="'ViewCounter'" class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/counter']"
-              >Counter</a
-            >
+          <li *permission="'ViewCounter'" class="nav-item" routerLinkActive="active">
+            <a class="nav-link text-dark" [routerLink]="['/counter']">Counter</a>
           </li>
-          <li *permission="'ViewForecast'" class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/fetch-data']"
-              >Fetch data</a
-            >
+          <li *permission="'ViewForecast'" class="nav-item" routerLinkActive="active">
+            <a class="nav-link text-dark" [routerLink]="['/fetch-data']">Forecast</a>
           </li>
-          <li class="nav-item" >
-            <button class="nav-link text-dark" (click)="logout()" >LogOut</button>
+          <li *permission="'ViewAppSettings'" class="nav-item" routerLinkActive="active">
+            <a class="nav-link text-dark" [routerLink]="['/app-settings']">Settings</a>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link text-dark btn btn-link" (click)="logout()">Logout</button>
           </li>
         </ul>
       </div>

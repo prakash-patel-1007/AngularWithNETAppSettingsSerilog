@@ -229,3 +229,33 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+
+# Serilog rolling log files
+logs/
+
+# SQLite database
+app.db
+*.db-shm
+*.db-wal
+
+# Angular build output in wwwroot (generated, not source)
+wwwroot/*.js
+wwwroot/*.css
+wwwroot/*.txt
+wwwroot/*.html
+
+# Angular cache
+ClientApp/.angular/
+
+# IDE / editor settings
+.claude/
+.cursor/
+
+# Temp directories
+_tmp_bcrypt/
+
+# Node modules
+ClientApp/node_modules/
+
+# Angular test coverage
+ClientApp/coverage/

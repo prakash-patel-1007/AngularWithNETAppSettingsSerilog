@@ -1,60 +1,57 @@
-import { HttpClient } from '@angular/common/http';
-import { Component, Inject, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
+import { AuthService } from '../core/services/auth.service';
 import { ComponentService } from '../services/component.service';
-import { HelperService } from '../services/helper.service';
 
 @Component({
+  standalone: false,
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  public form: FormGroup;
+  form: FormGroup;
+  isLoading = false;
+  errorMessage = '';
+
   constructor(
     private fb: FormBuilder,
+    private authService: AuthService,
     private componentService: ComponentService,
-    private http: HttpClient, 
-    @Inject('BASE_URL') private baseUrl: string,
-    private helperService: HelperService,
     private router: Router,
-  ) { 
+    private route: ActivatedRoute,
+  ) {
     this.form = this.fb.group({
-      UserId: new FormControl({ value: '', disabled: false }, [Validators.required]),
-      Password: new FormControl({ value: '', disabled: false }, [Validators.required]),
+      username: ['', Validators.required],
+      password: ['', Validators.required],
     });
     this.componentService.updateResult(false);
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    if (this.route.snapshot.queryParams['expired']) {
+      this.errorMessage = 'Session expired — please sign in again.';
+    }
   }
 
-  login() {
-    if (!this.form.get('UserId').value) {
-      alert('Please select User Id!!');
-      return;
-    }
-    if (!this.form.get('Password').value) {
-      alert('Please select Password!!');
-      return;
-    }
-    const loginData: LoginDetails = {
-      userName: this.form.controls.UserId.value,
-      password: this.form.controls.Password.value
-    };
+  login(): void {
+    if (this.form.invalid) return;
+    this.isLoading = true;
+    this.errorMessage = '';
 
-    this.http.post<any>(this.baseUrl + 'security/login', loginData).subscribe(result => {
-      this.helperService.storeUserId(loginData.userName);
-      this.helperService.setAuthenticatedUserAccessToken(result.token);
-      this.helperService.setPermissions(result.permissions);
-      this.router.navigate(['home'], { replaceUrl: true });
-    }, error => alert(error.error));
+    const { username, password } = this.form.value;
+
+    this.authService.login(username, password).subscribe({
+      next: () => {
+        this.isLoading = false;
+        this.componentService.updateResult(true);
+        this.router.navigate(['/home'], { replaceUrl: true });
+      },
+      error: () => {
+        this.isLoading = false;
+        this.errorMessage = 'Invalid username or password.';
+      }
+    });
   }
-
-}
-
-interface LoginDetails {
-  userName: string;
-  password: string;
 }

@@ -1,27 +1,25 @@
-# Angular11WithNetCore31
+# AngularWithNET — Client App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.0.
+Angular 19 SPA for the AngularWithNET sample application.
 
 ## Sample Functions
 - Angular SPA
-- .Net Core 3.1
-- JWT Authentication and Authorise Filter
+- .NET 10 API backend
+- JWT Authentication with refresh token rotation
 - Permissions
 - Serilog Logging
 - Getting appSettings.json settings in Angular
 - Auto Routing to Login if not authenticated
+- Todo CRUD with completion tracking
 
 ## Development server
 
 Run `npm install` to install all modules required for dev server.
 
-Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. If another port is assigned then please change it in .Net Core StartUp file.
+Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. API calls are proxied to the backend via `proxy.conf.json`.
 
-Run .Net Core Application in IIS Express.
+Run the .NET API in a separate terminal with `dotnet watch run`.
 
 Use `admin` as User Id and `admin` as Password for all permissions.
 
 Use `user` as User Id and `user` as Password for one permission.
-
-
-
